@@ -1,1 +1,1 @@
-Test
+This activity involves working with NumPy to manipulate and explore arrays. You'll create a NumPy array containing the first 10 positive integers, analyze its structure by printing its shape and data type, and perform element-wise operations by multiplying each value by 2. It's a practical exercise to understand the basics of NumPy arrays and their functionality. 😊

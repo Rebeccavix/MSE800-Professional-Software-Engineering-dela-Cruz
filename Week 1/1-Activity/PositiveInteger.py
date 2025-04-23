@@ -1,34 +1,21 @@
-#Activity Week1 - using NumPy
-#Tasks:
-#Print the average temperature for a week.
-#Find the highest and lowest temperature recorded.
-#!Convert all temperatures to Fahrenheit and print the result.
-#(Formula: F = C * 9/5 + 32)
-#Identify the days (by index) where the temperature was above 20°C.
- 
-#Help syntax: 
-#import numpy as np
-#temperatures = np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
+#1- Activity : Create a NumPy array of the first 10 positive integers. Then:
+#Print the array.
+#Print the shape and data type of the array.
+#Multiply each element by 2 and print the result.
  
 import numpy as np
 
-# Temperatures for a week in Celsius
-temperatures = np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
+# 1. Create a NumPy array of the first 10 positive integers
+arr = np.arange(1, 11)
+print("Original array:")
+print(arr)
 
-# Calculate average temperature
-average_temp = np.mean(temperatures)
-print(f"Average temperature for the week: {average_temp:.2f}�C")
+# 2. Print the shape and data type of the array
+print("\nShape of the array:", arr.shape)
+print("Data type of the array:", arr.dtype)
 
-# Find the highest and lowest temperatures recorded
-max_temp = np.max(temperatures)
-min_temp = np.min(temperatures)
-print(f"Highest temperature: {max_temp}�C")
-print(f"Lowest temperature: {min_temp}�C")
+# 3. Multiply each element by 2 and print the result
+doubled_arr = arr * 2
+print("\nArray after multiplying each element by 2:")
+print(doubled_arr)
 
-# Convert temperatures to Fahrenheit
-temperatures_fahrenheit = temperatures * 9/5 + 32
-print("Temperatures in Fahrenheit:", temperatures_fahrenheit)
-
-# Identify the days where the temperature was above 20�C
-days_above_20 = np.where(temperatures > 20)[0]
-print("Days with temperatures above 20�C (0=Mon, 6=Sun):", days_above_20)
