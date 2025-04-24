@@ -42,7 +42,7 @@ scores[:, 2] += 5
 print("Updated scores after adding bonus points:\n", scores)
 
 #Output: Average score for each student:
-#           [84.33333333 86.33333333 82.66666667 92.33333333 75.        ]
+#           [84.33333333 86.33333333 82.66666667 92.33333333 75]
 #        Average score for each subject:
 #           [83.  82.6 86.8]
 #        Student with the highest total score (row index): 3
