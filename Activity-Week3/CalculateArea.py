@@ -27,3 +27,11 @@ print(f"The rounded area of the rectangle is: {area}")
 # you can calculate it as follows:
 square_of_length = round(length ** 2, 2)
 print(f"The square of the length is approximately: {square_of_length}")
+
+number_l, number_w = input("Input value (L & W): ").split()
+number_l =int(number_l)
+number_w = int(number_w)
+def area (number_l, number_w):
+    Area_lan = number_l* number_w
+    return (Area_lan)
+area(number_l,number_w)
