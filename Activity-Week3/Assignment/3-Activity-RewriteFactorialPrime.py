@@ -23,3 +23,7 @@ class Factorial:
 
 
 Factorial.display(10)
+
+# Output:
+# Factorial of 10 is 3628800
+# 10 is not a prime number.
