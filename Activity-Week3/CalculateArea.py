@@ -2,18 +2,20 @@
 
 import math
 
+
 def calculate_area(length, width):
     # Ensure the dimensions are positive
-    length = abs(length)
-    width = abs(width)
-    
+    length = int(length)
+    width = int(width)
+
     # Calculate the area
     area = length * width
-    
+
     # Round the area to 2 decimal places
     rounded_area = round(area, 2)
-    
+
     return rounded_area
+
 
 # Input dimensions of the rectangle
 length = float(input("Enter the length of the rectangle: "))
