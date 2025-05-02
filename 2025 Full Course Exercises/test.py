@@ -1,31 +1,42 @@
-def factorial(num):
-    """Calculate the factorial of a number."""
-    result = 1
-    for i in range(1, num + 1):
-        result *= i
-    return result
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.grades = []  # List to store grades
+
+    def add_grade(self, grade):
+        """Adds a grade to the student's record."""
+        if 0 <= grade <= 100:  # Ensures valid grade range
+            self.grades.append(grade)
+        else:
+            print("Invalid grade! Please enter a value between 0 and 100.")
+
+    def calculate_average(self):
+        """Calculates the average grade."""
+        if self.grades:
+            return sum(self.grades) / len(self.grades)
+        return 0
+
+    def show_results(self):
+        """Displays the student's grades and average."""
+        if self.grades:
+            print(f"\nStudent: {self.name}")
+            print(f"Grades: {self.grades}")
+            print(f"Average Grade: {self.calculate_average():.2f}")
+            print(2**5)
+        else:
+            print(f"\nStudent: {self.name} has no recorded grades.")
 
 
-def check_prime(num):
-    """Check if a number is prime."""
-    if num < 2:  # 0 and 1 are not prime numbers
-        return False
-    for i in range(2, int(num ** 0.5) + 1):
-        # Check if num is divisible by i
-        if num % i == 0:
-            return False
-    return True
+# Example usage
+student1 = Student("Alice")
+student1.add_grade(85)
+student1.add_grade(90)
+student1.add_grade(78)
 
+student2 = Student("Bob")
+student2.add_grade(92)
+student2.add_grade(88)
 
-def display(num):
-    """Display factorial and prime status of a number."""
-    print("Factorial of", num, "is", factorial(num))
-    if check_prime(num):
-        print(f"{num} is a prime number.")
-    else:
-        print(f"{num} is not a prime number.")
-
-
-# No need to instantiate a class, just call the function with the number
-number = 10
-display(number)
+# Show results
+student1.show_results()
+student2.show_results()
