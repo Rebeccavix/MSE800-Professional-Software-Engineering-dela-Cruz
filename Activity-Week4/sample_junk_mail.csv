@@ -1,0 +1,6 @@
+EmailID,Subject,Sender,Content,ContainsLink,IsSpam
+1,Win a Free iPhone!,promo@winbig.com,Click here to claim your free iPhone now!,True,True
+2,Important: Account Suspension,support@fakemail.com,We noticed unusual activity. Verify now.,True,True
+3,Newsletter - April Update,news@legitcompany.com,Here is your monthly newsletter.,False,False
+4,You have been selected,lottery@scam.org,Congratulations! You are our lucky winner!,True,True
+5,Team Meeting Agenda,colleague@company.com,Please find the agenda for tomorrow’s meeting attached.,False,False
