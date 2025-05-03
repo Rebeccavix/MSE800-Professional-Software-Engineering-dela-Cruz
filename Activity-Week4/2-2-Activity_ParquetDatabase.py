@@ -3,5 +3,5 @@
 
 import pandas as pd
 
-df = pd.read_parquet('Activity-Week4\Sample_data_2.parquet')
-print(f"Number of records: {df.shape[0]}")
+data_frame = pd.read_parquet('Activity-Week4\Sample_data_2.parquet')
+print(f"Number of records: {data_frame.shape[0]}")
