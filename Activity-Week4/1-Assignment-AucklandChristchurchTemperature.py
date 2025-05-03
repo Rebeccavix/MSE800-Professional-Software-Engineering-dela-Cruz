@@ -1,3 +1,9 @@
+# Last activity for Week 4: Using union and symmetric difference and Math and circle Libs
+# Update the data format file to be added two more functionalities:
+# 1- call Math function and get value from end user to calculate Sin and Cos
+# 2- get diameter of a circle and calculate area of the circle.
+# 3- Try to test the union and symmetric difference methods
+
 import pandas as pd
 import matplotlib.pyplot as plt
 # import seaborn as sns
