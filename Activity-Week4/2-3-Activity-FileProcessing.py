@@ -1,3 +1,8 @@
+# Activity W4-2-3: - Create a Full project in Python - object oriented - File processing
+# Note: You must have main function
+# Write a full project to do the data file processing for csv, text, image and etc. file formats.
+
+
 import pandas as pd
 import os
 
