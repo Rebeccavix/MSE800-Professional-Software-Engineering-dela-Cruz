@@ -1,8 +1,3 @@
-'''
-Activity W4-1: - https://data.niwa.co.nz/pages/clidb-on-datahub
-Due date : 9 May 2025 - Load a data for Auckland and Christchurch and compare the temperature between two cities in a year monthly basis -  See Link: https://data.niwa.co.nz/pages/clidb-on-datahub
-'''
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -16,11 +11,11 @@ class TemperatureData:
     def load_data(self):
         # full paths to the CSV uploaded files
         self.auckland = pd.read_csv(
-            'Activity-Week4\Auckland_temperature.csv')
+            '2025 Full Course Exercises/auckland_temperature.csv')
         self.auckland['City'] = 'Auckland'
 
         self.christchurch = pd.read_csv(
-            'Activity-Week4\Christchurch_temperature.csv')
+            '2025 Full Course Exercises/christchurch_temperature.csv')
         self.christchurch['City'] = 'Christchurch'
 
         self.combined = pd.concat([self.auckland, self.christchurch])
