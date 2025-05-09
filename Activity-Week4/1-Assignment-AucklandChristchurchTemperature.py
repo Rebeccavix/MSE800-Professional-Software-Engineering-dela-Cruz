@@ -14,9 +14,8 @@ class TemperatureData:
         self.combined = None
 
     def load_data(self):
-        # full paths to the CSV uploaded files
-        self.auckland = pd.read_csv(
-            'Activity-Week4\Auckland_temperature.csv')
+        """Load temperature data from CSV files."""
+        self.auckland = pd.read_csv('Activity-Week4\Auckland_temperature.csv')
         self.auckland['City'] = 'Auckland'
 
         self.christchurch = pd.read_csv(
@@ -29,7 +28,7 @@ class TemperatureData:
         for city in self.combined['City'].unique():
             city_data = self.combined[self.combined['City'] == city]
             plt.plot(city_data['Month'],
-                     city_data['Mean Temperature (°C)'], label=city)
+                     city_data['Temperature'], label=city)
 
         plt.title('Monthly Temperature: Auckland vs Christchurch')
         plt.xlabel('Month')
