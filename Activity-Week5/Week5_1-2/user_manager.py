@@ -46,11 +46,13 @@ def delete_user(user_id):
 def advanced_search(user_id, name):
     conn = create_connection()
     cursor = conn.cursor()
+
     cursor.execute("SELECT * FROM users WHERE name LIKE ?",
                    ('%' + name + '%',))
     rows = cursor.fetchall()
     cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
     conn.commit()
+
     conn.close()
 
     return rows
