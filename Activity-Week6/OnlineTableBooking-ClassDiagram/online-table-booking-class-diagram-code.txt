@@ -1,0 +1,78 @@
+// title
+title Online Restaurant Table Booking Data Model
+
+// define tables
+users [icon: user, color: yellow]{
+  id string pk
+  username string
+  password_hash string
+  email string
+  phone string
+  role string // customer, staff, admin
+  created_at timestamp
+}
+
+restaurants [icon: coffee, color: orange]{
+  id string pk
+  name string
+  address string
+  phone string
+  email string
+  opening_hours string
+}
+
+tables [icon: grid, color: blue]{
+  id string pk
+  restaurant_id string
+  table_number string
+  size string // e.g., "round", "square"
+  capacity int
+  location string // e.g., "window", "patio"
+  status string // available, reserved, out_of_service
+}
+
+bookings [icon: calendar, color: green]{
+  id string pk
+  user_id string
+  table_id string
+  restaurant_id string
+  booking_time timestamp
+  duration_minutes int
+  num_guests int
+  status string // pending, confirmed, cancelled, completed
+  created_at timestamp
+  updated_at timestamp
+  special_requests string
+}
+
+notifications [icon: mail, color: purple]{
+  id string pk
+  user_id string
+  booking_id string
+  sent_at timestamp
+  type string // confirmation, reminder, cancellation
+  message string
+  status string // sent, failed
+}
+
+staff_actions [icon: activity, color: red]{
+  id string pk
+  staff_id string
+  action_type string // create, update, cancel, assign
+  booking_id string
+  action_time timestamp
+  notes string
+}
+
+// define relationships
+users.id > bookings.user_id
+users.id > notifications.user_id
+users.id > staff_actions.staff_id
+
+restaurants.id > tables.restaurant_id
+restaurants.id > bookings.restaurant_id
+
+tables.id > bookings.table_id
+
+bookings.id > notifications.booking_id
+bookings.id > staff_actions.booking_id
