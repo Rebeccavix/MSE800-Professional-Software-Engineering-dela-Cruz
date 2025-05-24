@@ -1,0 +1,111 @@
+# Activity Week7-2: Factory Pattern
+# Start with reading the code to debug and then explain why the model is following Factory pattern.
+# See below:
+
+'''
+from abc import ABC, abstractmethod
+
+#Explain Code | Generate Tests | Generate Docstrings | Ask Sourcecy
+class Factory(ABC):
+
+    @abstractmethod
+    def create_product(self, kind=None):
+        pass
+
+#Explain Code | Generate Tests | Generate Docstrings | Ask Sourcecy
+class AnimalFactory(Factory):
+    def __init__(self):
+        pass
+
+    def create_product(self, kind=None):
+        if kind == "dog":
+            animal = Dog()
+        elif kind == "cat":
+            animal = Cat()
+
+        return animal
+
+#Explain Code | Generate Tests | Generate Docstrings | Ask Sourcecy
+class DogFactory(Factory):
+
+    def create_product(self, kind=None):
+        pass
+
+
+class CatFactory(Factory):
+
+    def create_product(self, kind=None):
+        pass
+
+
+class Animals(ABC):
+
+    @abstractmethod
+    def run(self):
+        pass
+
+
+class Dog(Animals):
+
+    def run(self):
+        print(f"I'm a Dog, I can run!!")
+
+
+class Cat(Animals):
+    def __init__(self):
+        pass
+
+    def run(self):
+        print(f"I'm a Cat, I can run!!")
+
+
+# client
+factory = DogFactory()
+dog = Dog()
+dog = factory.create_product()
+
+dog.run()
+'''
+
+from abc import ABC, abstractmethod
+
+
+class Factory(ABC):
+    @abstractmethod
+    def create_product(self, kind=None):
+        pass
+
+
+class AnimalFactory(Factory):
+    def create_product(self, kind=None):
+        if kind == "dog":
+            return Dog()
+        elif kind == "cat":
+            return Cat()
+        else:
+            raise ValueError("Unknown animal type")
+
+
+class Animals(ABC):
+    @abstractmethod
+    def run(self):
+        pass
+
+
+class Dog(Animals):
+    def run(self):
+        print("I'm a Dog, I can run!")
+
+
+class Cat(Animals):
+    def run(self):
+        print("I'm a Cat, I can run!")
+
+
+# Client code
+factory = AnimalFactory()
+dog = factory.create_product("dog")  # Corrected method call
+dog.run()
+
+cat = factory.create_product("cat")
+cat.run()
