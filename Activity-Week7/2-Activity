@@ -2,71 +2,6 @@
 # Start with reading the code to debug and then explain why the model is following Factory pattern.
 # See below:
 
-'''
-from abc import ABC, abstractmethod
-
-#Explain Code | Generate Tests | Generate Docstrings | Ask Sourcecy
-class Factory(ABC):
-
-    @abstractmethod
-    def create_product(self, kind=None):
-        pass
-
-#Explain Code | Generate Tests | Generate Docstrings | Ask Sourcecy
-class AnimalFactory(Factory):
-    def __init__(self):
-        pass
-
-    def create_product(self, kind=None):
-        if kind == "dog":
-            animal = Dog()
-        elif kind == "cat":
-            animal = Cat()
-
-        return animal
-
-#Explain Code | Generate Tests | Generate Docstrings | Ask Sourcecy
-class DogFactory(Factory):
-
-    def create_product(self, kind=None):
-        pass
-
-
-class CatFactory(Factory):
-
-    def create_product(self, kind=None):
-        pass
-
-
-class Animals(ABC):
-
-    @abstractmethod
-    def run(self):
-        pass
-
-
-class Dog(Animals):
-
-    def run(self):
-        print(f"I'm a Dog, I can run!!")
-
-
-class Cat(Animals):
-    def __init__(self):
-        pass
-
-    def run(self):
-        print(f"I'm a Cat, I can run!!")
-
-
-# client
-factory = DogFactory()
-dog = Dog()
-dog = factory.create_product()
-
-dog.run()
-'''
-
 from abc import ABC, abstractmethod
 
 
@@ -109,3 +44,7 @@ dog.run()
 
 cat = factory.create_product("cat")
 cat.run()
+
+# The AnimalFactory class handles object creation, ensuring that Dog and Cat instances are created without requiring the client code to instantiate them directly.
+# New animal types can easily be added to AnimalFactory without modifying existing client code, promoting scalability.
+# The Factory pattern abstracts away the creation logic, allowing the client to request an object without knowing its exact implementation.
