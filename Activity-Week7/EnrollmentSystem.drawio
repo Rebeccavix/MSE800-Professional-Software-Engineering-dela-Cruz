@@ -1,9 +1,99 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.0.9">
   <diagram name="Page-1" id="xgAmkWk7060SkU8OQc0O">
-    <mxGraphModel>
+    <mxGraphModel dx="1034" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-31" value="Enrolment System" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="290" y="20" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-32" value="Course listing" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="110" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-34" value="&lt;span style=&quot;font-family: Verdana;&quot;&gt;Course listing&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="5jh8x2SwszEHaVgaEgFi-32">
+          <mxGeometry y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-33" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="5jh8x2SwszEHaVgaEgFi-32">
+          <mxGeometry x="50" y="100" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-35" value="Enrolment page" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="339" y="80" width="120" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-36" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="5jh8x2SwszEHaVgaEgFi-35">
+          <mxGeometry x="55" y="100" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-38" value="&lt;span style=&quot;font-family: Verdana;&quot;&gt;Enrolment&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Verdana;&quot;&gt;page&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="5jh8x2SwszEHaVgaEgFi-35">
+          <mxGeometry y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-39" value="Enrolment&lt;div&gt;system&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="110" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-44" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="398" y="360" as="sourcePoint" />
+            <mxPoint x="240" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="399" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-45" value="Verify enrolment" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;exitX=0.286;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry x="0.0086" relative="1" as="geometry">
+            <mxPoint x="405.8599999999999" y="209.5999999999999" as="sourcePoint" />
+            <mxPoint x="550" y="210" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-46" value="&lt;span&gt;Verification&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;fontFamily=Verdana;fontSize=12;" edge="1" parent="1" source="5jh8x2SwszEHaVgaEgFi-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="404" y="250" as="targetPoint" />
+            <mxPoint x="500" y="280" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="490" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-47" value="&lt;span style=&quot;font-family: Verdana;&quot;&gt;Enrolment&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: Verdana;&quot;&gt;system&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="360" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-50" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="73.34" y="80" width="33.33" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-55" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5jh8x2SwszEHaVgaEgFi-59" target="5jh8x2SwszEHaVgaEgFi-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="370" as="sourcePoint" />
+            <mxPoint x="440" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-37" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="5jh8x2SwszEHaVgaEgFi-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="265" as="sourcePoint" />
+            <mxPoint x="239.99999999999991" y="263.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-57" value="Course added" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="90" y="240" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-42" value="View courses" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1" source="5jh8x2SwszEHaVgaEgFi-33">
+          <mxGeometry x="0.0086" relative="1" as="geometry">
+            <mxPoint x="315" y="200" as="sourcePoint" />
+            <mxPoint as="offset" />
+            <mxPoint x="390" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-58" value="Enrolment confirm" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="250" y="313" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-60" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="5jh8x2SwszEHaVgaEgFi-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="370" as="sourcePoint" />
+            <mxPoint x="90" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5jh8x2SwszEHaVgaEgFi-59" value="Student" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="50" y="137" width="80" height="17" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
