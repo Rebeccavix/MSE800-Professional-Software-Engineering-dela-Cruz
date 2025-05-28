@@ -25,6 +25,9 @@ def main():
             name = input("Enter name: ")
             email = input("Enter email: ")
             add_user(name, email)
+            name = input("Enter course name: ")
+            unit = int(input("Enter unit count: "))
+            add_course(name, unit)
         elif choice == '2':
             users = view_users()
             for user in users:

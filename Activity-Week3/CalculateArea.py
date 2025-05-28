@@ -5,8 +5,8 @@ import math
 
 def calculate_area(length, width):
     # Ensure the dimensions are positive
-    length = int(length)
-    width = int(width)
+    length = abs(length)
+    width = abs(width)
 
     # Calculate the area
     area = length * width

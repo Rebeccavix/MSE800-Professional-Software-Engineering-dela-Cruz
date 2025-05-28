@@ -3,4 +3,4 @@ import tensorflow as tf
 print("Training data shape:", x_train.shape, y_train.shape)
 
 # x is the data
-# y is the data
+# y is the labels

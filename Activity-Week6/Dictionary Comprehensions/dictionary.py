@@ -150,3 +150,6 @@ print(shape)
 
 shape = npmatrix.reshape(-1)
 print(shape)
+
+# zip answer key compare to sample answer
+# activity for the next week - push github
