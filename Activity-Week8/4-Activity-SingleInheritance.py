@@ -33,3 +33,7 @@ d = Dog("Buddy")
 # Test the sound method
 print(f"{a.name} says: {a.sound()}")  # Output: I make a sound
 print(f"{d.name} says: {d.sound()}")  # Output: Woof!
+
+
+# Animal class: Has a sound() method that returns "I make a sound"
+# Dog class: Overrides the sound() method to return "Woof!"
