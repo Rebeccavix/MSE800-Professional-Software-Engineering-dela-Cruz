@@ -1,0 +1,7 @@
+[2025-06-14 12:38:54] [event_type_test] User: user_id_test - message_test
+[2025-06-14 12:42:15] [LOGIN] User: user123 - User logged into the system
+[2025-06-14 12:42:15] [RENTAL] User: user123 - Rented car ID: CAR456
+[2025-06-14 12:42:15] [RETURN] User: user123 - Returned car ID: CAR456
+[2025-06-14 12:42:54] [LOGIN] User: user123 - User logged into the system
+[2025-06-14 12:42:54] [RENTAL] User: user123 - Rented car ID: CAR456
+[2025-06-14 12:42:54] [RETURN] User: user123 - Returned car ID: CAR456
