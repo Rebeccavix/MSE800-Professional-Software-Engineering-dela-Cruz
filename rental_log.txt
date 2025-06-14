@@ -5,3 +5,17 @@
 [2025-06-14 12:42:54] [LOGIN] User: user123 - User logged into the system
 [2025-06-14 12:42:54] [RENTAL] User: user123 - Rented car ID: CAR456
 [2025-06-14 12:42:54] [RETURN] User: user123 - Returned car ID: CAR456
+[2025-06-14 20:53:31] [VIEW] User: SYSTEM - Viewed available cars (5 available)
+[2025-06-14 20:53:58] [ERROR] User: SYSTEM - Unexpected error: 
+[2025-06-14 20:54:01] [VIEW] User: SYSTEM - Viewed available cars (5 available)
+[2025-06-14 20:54:09] [ERROR] User: 1 - Invalid user attempted rental
+[2025-06-14 21:10:30] [ERROR] User: SYSTEM - Invalid menu choice: & C:/Users/VK/anaconda3/envs/MSE800/python.exe c:/Users/VK/source/repos/MSE800-Professional-Software-Engineering/Activity-Week10/2-Activity-Decompose.py
+[2025-06-14 21:13:40] [ERROR] User: SYSTEM - Invalid menu choice: & C:/Users/VK/anaconda3/envs/MSE800/python.exe c:/Users/VK/source/repos/MSE800-Professional-Software-Engineering/Activity-Week10/2-Activity-Decompose.py
+[2025-06-14 21:14:11] [ERROR] User: SYSTEM - Invalid menu choice: & C:/Users/VK/anaconda3/envs/MSE800/python.exe c:/Users/VK/source/repos/MSE800-Professional-Software-Engineering/Activity-Week10/2-Activity-Decompose.py
+[2025-06-14 21:14:19] [SYSTEM] User: SYSTEM - System shutdown
+[2025-06-14 21:14:31] [VIEW] User: SYSTEM - Viewed available cars (3 available)
+[2025-06-14 21:19:33] [ERROR] User: SYSTEM - Invalid menu choice: 8
+[2025-06-14 21:19:37] [ERROR] User: SYSTEM - Invalid menu choice: 8
+[2025-06-14 21:19:43] [SYSTEM] User: SYSTEM - System shutdown
+2025-06-14 21:19:54.672244 - Viewed available cars
+2025-06-14 21:20:06.590180 - 4 attempted return with no rental
