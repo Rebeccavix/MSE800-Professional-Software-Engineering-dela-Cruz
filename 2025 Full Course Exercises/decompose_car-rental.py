@@ -82,6 +82,11 @@ def car_rental_system():
             with open("rental_log.txt", "a") as log_file:
                 log_file.write(log_message + "\n")
 '''
+#!/usr/bin/env python3
+"""
+Simplified Car Rental System - Single File Version
+A complete car rental management system with all features in one file.
+"""
 
 import os
 import datetime
