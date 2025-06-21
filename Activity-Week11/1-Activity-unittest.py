@@ -7,9 +7,8 @@ import unittest
 def add(x, y):  # This is your function that simply returns the sum of x and y.
     return x + y
 
+
 # This defines a test class. It inherits from unittest.TestCase, giving you access to test tools like assertEqual().
-
-
 class TestMathOperations(unittest.TestCase):
     # This method inside your test class defines your actual test. Python knows it's a test because the method name starts with test_.
     def test_add(self):
