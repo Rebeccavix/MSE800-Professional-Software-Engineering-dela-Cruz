@@ -8,26 +8,23 @@ import os
 app = Flask(__name__)
 
 # Create upload folder
-if not os.path.exists('upload'):
-    os.makedirs('upload')
+UPLOAD_FOLDER = '/upload'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/upload', methods=['POST'])
 def upload_file():
-    result = '''
-        <form method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit" value="Upload">
-        </form>
-    '''
-
-    if request.method == 'POST':
-        file = request.files['file']
-        file.save(f'upload/{file.filename}')
-        result += f'<img src="/upload/{file.filename}">'
-
-    return result
+    if 'file' not in request.files:
+        return redirect(request.url)
+    file = request.files['file']
+    if file.filename == '':
+        return redirect(request.url)
+    if file:
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+        file.save(filepath)
+        image_url = url_for(filename='uploads/' + file.filename)
+        return render_template('profile.html', image_url=image_url)
 
 
-# Run the app
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
