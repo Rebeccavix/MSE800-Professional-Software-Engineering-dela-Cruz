@@ -20,11 +20,10 @@ def profile():
 
 
 app = Flask(__name__)
-UPLOAD_FOLDER = 'static/uploads'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, 'static')
 
 
-@app.route('/upload', methods=['POST'])
+@app.route('/static', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return redirect(request.url)
@@ -32,10 +31,13 @@ def upload_file():
     if file.filename == '':
         return redirect(request.url)
     if file:
-        filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+        filename = file.filename
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(filepath)
-        image_url = url_for('static', filename='uploads/' + file.filename)
+        # url_for('static', filename=filename) will generate the correct URL for the static file
+        image_url = url_for('static', filename=filename)
         return render_template('profile.html', image_url=image_url)
+    return redirect(request.url)
 
 
 if __name__ == "__main__":
