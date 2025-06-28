@@ -3,10 +3,10 @@ import os
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = 'uploads'  # Changed folder to 'uploads'
+UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Ensure the upload folder exists
+# Ensure the uploads folder exists
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route("/")
@@ -19,6 +19,7 @@ def about():
 
 @app.route("/profile", methods=['GET'])
 def profile():
+    # By default, no image is shown
     return render_template("profile.html", image_url=None)
 
 @app.route('/upload', methods=['POST'])
@@ -31,11 +32,11 @@ def upload_file():
     if file:
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filepath)
-        image_url = url_for('uploaded_file', filename=file.filename)  # Updated here
+        # Use the uploaded_file route to serve the image
+        image_url = url_for('uploaded_file', filename=file.filename)
         return render_template('profile.html', image_url=image_url)
     return redirect(url_for('profile'))
 
-# Route to serve uploaded files
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
