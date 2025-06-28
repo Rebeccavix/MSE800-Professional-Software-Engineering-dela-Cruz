@@ -7,9 +7,9 @@ import os
 
 app = Flask(__name__)
 
-# Create static folder
-if not os.path.exists('static'):
-    os.makedirs('static')
+# Create upload folder
+if not os.path.exists('Activity-Week12/upload'):
+    os.makedirs('Activity-Week12/upload')
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -23,8 +23,8 @@ def upload_file():
 
     if request.method == 'POST':
         file = request.files['file']
-        file.save(f'static/{file.filename}')
-        result += f'<img src="/static/{file.filename}">'
+        file.save(f'Activity-Week12/upload/{file.filename}')
+        result += f'<img src="Activity-Week12/upload/{file.filename}">'
 
     return result
 
