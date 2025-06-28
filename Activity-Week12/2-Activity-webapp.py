@@ -8,11 +8,11 @@ import os
 app = Flask(__name__)
 
 # Create upload folder
-if not os.path.exists('Activity-Week12/upload'):
-    os.makedirs('Activity-Week12/upload')
+if not os.path.exists('upload'):
+    os.makedirs('upload')
 
 
-@app.route('Activity-Week12/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def upload_file():
     result = '''
         <form method="post" enctype="multipart/form-data">
@@ -23,8 +23,8 @@ def upload_file():
 
     if request.method == 'POST':
         file = request.files['file']
-        file.save(f'Activity-Week12/upload/{file.filename}')
-        result += f'<img src="/Activity-Week12/upload/{file.filename}">'
+        file.save(f'upload/{file.filename}')
+        result += f'<img src="/upload/{file.filename}">'
 
     return result
 
