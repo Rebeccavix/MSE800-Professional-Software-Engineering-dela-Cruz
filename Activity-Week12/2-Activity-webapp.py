@@ -12,7 +12,7 @@ if not os.path.exists('Activity-Week12/upload'):
     os.makedirs('Activity-Week12/upload')
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('Activity-Week12/', methods=['GET', 'POST'])
 def upload_file():
     result = '''
         <form method="post" enctype="multipart/form-data">
