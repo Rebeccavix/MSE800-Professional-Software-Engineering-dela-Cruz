@@ -9,11 +9,19 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def home():
+def hello_flask():
     return "<p>Hello, World!</p>"
 
 
-'''
-if __name__ == '__main__':
+@app.route("/bye")
+def bye():
+    return "<p>Goodbye, Flask!</p>"
+
+
+@app.route("/greet/<name>")
+def greet(name):
+    return f"<p>Hello, {name} is learning Flask!</p>"
+
+
+if __name__ == "__main__":
     app.run(debug=True)
-    '''
