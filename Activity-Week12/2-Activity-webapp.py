@@ -22,7 +22,7 @@ def upload_file():
     if file:
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filepath)
-        image_url = url_for(filename='uploads/' + file.filename)
+        image_url = url_for(filename='upload/' + file.filename)
         return render_template('profile.html', image_url=image_url)
 
 
