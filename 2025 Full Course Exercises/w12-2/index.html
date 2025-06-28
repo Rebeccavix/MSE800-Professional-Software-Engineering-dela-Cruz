@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Load Image from URL</title>
+</head>
+
+<body>
+    <h1>Click the button to load an image</h1>
+    <button onclick="loadImage()">Load Image</button>
+    <br><br>
+    <img id="image" style="max-width: 400px; display: none;" alt="Image from URL" />
+
+    <script>
+        function loadImage() {
+            const imageUrl = "https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg";
+            const img = document.getElementById("image");
+            img.src = imageUrl;
+            img.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
