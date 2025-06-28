@@ -23,7 +23,7 @@ def upload_file():
 
     if request.method == 'POST':
         file = request.files['file']
-        file.save(f'/upload/{file.filename}')
+        file.save(f'Activity-Week12/upload/{file.filename}')
         result += f'<img src="Activity-Week12/upload/{file.filename}">'
 
     return result
