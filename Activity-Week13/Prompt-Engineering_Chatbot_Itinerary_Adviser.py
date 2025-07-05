@@ -19,9 +19,9 @@ def instructor_chatbot():
     You are a professional tourist recommender. Provide an itinerary recommendation based on user data.
 
     User Details:
-    - Days: {days}
-    - Destination: {location}
-    - Age: {age}
+    - days: {days} days
+    - destination: {location} city
+    - Age: {age} years
 
     Based on this information, give a structured itinerary with the name of the place, address, and a short description for each day, with a maximum of three activities per day.
     """
